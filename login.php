@@ -23,7 +23,8 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
   $stmt->execute();
   $result = $stmt->get_result();
   $row = $result->fetch_assoc();
-  if ($credentials['password'] == $row['password']) {
+  if (password_verify($credentials['password'], $row['password'])) {
+  //if ($credentials['password'] == $row['password']) {
     echo "Logged in. Yay!";
     $_SESSION['user_id'] = $row['id'];
     $_SESSION['username'] = $row['username'];

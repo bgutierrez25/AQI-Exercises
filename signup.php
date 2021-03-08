@@ -16,7 +16,8 @@ if ($_POST['username'] !== "" && $_POST['password'] !== "") {
   $credentials = array_map('sanitize', $_POST);
   $credentials['password'] = $_POST['password'];
   $stmt = $conn->prepare("INSERT INTO Users(username, password) VALUES(?, ?)");
-  $stmt->bind_param("ss", $credentials['username'], $credentials['password']);
+  //$stmt->bind_param("ss", $credentials['username'], $credentials['password']);
+  $stmt->bind_param("ss", $credentials['username'], password_hash($credentials['password'], PASSWORD_DEFAULT));
   $stmt->execute();
   
   			if ($stmt->execute()) {
