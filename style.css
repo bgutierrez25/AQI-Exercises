@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* changes color of navbar background */
+.navbar {
+  background: #131313;
+  padding: 1rem 8rem;
+}
+
+/* changes color of navbar-brand font size */
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 650;
+}
+
+/* will get the list of all nav link and change color and space them out */
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #ffff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+/* changes color/space of sign in and register button on navbar */
+#navbarSignIn {
+  color: #ffff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#navbarRegister {
+  color: #ffff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+/* color changes when hover over nav links */
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: rgb(100, 212, 212);
+}
+
+#navbarSignIn:hover {
+  color: rgb(100, 212, 212);
+}
+
+#navbarRegister:hover {
+  color: rgb(100, 212, 212);
+}
+
+#navbarBurger:hover {
+  color: rgb(100, 212, 212);
+}
+
+/* set homepage background */
+.homepage-bg {
+  background-image: url("../img/homepage_bg_track.jpg");
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.homepage-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.midd .homepage-bg {
+  position: relative;
+}
+
+/* paragraph on homepage */
+.midd .homepage-bg p {
+  width: 55%;
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+}
+
+.midd .homepage-text p {
+  width: 55%;
+  font-size: 1.1rem;
+  padding-bottom: 1.2rem;
+  letter-spacing: 0.2px;
+}
+
+/* "join today" button on homepage */
+.midd .homepage-bg a {
+  color: black;
+  background: rgb(100, 212, 212);
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* about section background */
+.about {
+  background-color: black;
+}
+
+/* text section in the about section */
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+/* h2 in the about section */
+.about .text h2 {
+  color: rgb(100, 212, 212);
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
+/* paragraph in the about section */
+.about .text p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+/* h2 in exercise section */
+.exercise .text h2 {
+  color: rgb(100, 212, 212);
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
+/* paragraph in the exercise section */
+.exercise .text p {
+  color: black;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+/* h6s in the footer */
+.footer-titles h6 {
+  color: rgb(100, 212, 212);
+}
+
+/* remove underline in links in footer */
+.footer-info a:link {
+  text-decoration: none;
+}
